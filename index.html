@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EleganTech | Smartphone Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <header>
+        <div class="logo">Elegan<span>Tech</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+        <button id="loginBtn" class="btn-login">Login</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Masa Depan di Genggaman Anda</h1>
+            <p>Temukan koleksi smartphone flagship dengan teknologi terbaru dan desain paling elegan.</p>
+            <a href="#produk" class="btn-primary">Belanja Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Daftar Produk -->
+    <section id="produk" class="products">
+        <h2>Koleksi <span>Terbaru</span></h2>
+        <div class="product-grid">
+            <!-- Produk 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1598327105666-5b89351cb315?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Smartphone A">
+                <h3>Lumina X Pro</h3>
+                <p class="price">Rp 14.500.000</p>
+                <button class="btn-buy" onclick="alert('Silakan login terlebih dahulu untuk membeli.')">Beli Sekarang</button>
+            </div>
+            <!-- Produk 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Smartphone B">
+                <h3>Aero Z Fold</h3>
+                <p class="price">Rp 21.000.000</p>
+                <button class="btn-buy" onclick="alert('Silakan login terlebih dahulu untuk membeli.')">Beli Sekarang</button>
+            </div>
+            <!-- Produk 3 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1533228100845-08145b01de14?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Smartphone C">
+                <h3>Nova 9 Ultra</h3>
+                <p class="price">Rp 12.000.000</p>
+                <button class="btn-buy" onclick="alert('Silakan login terlebih dahulu untuk membeli.')">Beli Sekarang</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Masuk ke Akun</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Masukkan email Anda" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Masukkan password" required>
+                </div>
+                <button type="submit" class="btn-submit">Login</button>
+                <p class="register-link">Belum punya akun? <a href="#">Daftar di sini</a></p>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 EleganTech. Hak cipta dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
